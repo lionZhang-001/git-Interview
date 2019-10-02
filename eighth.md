@@ -21,7 +21,7 @@
 6. 引入包，不可出现死循坏。即 A import B,B import A，这种情况编译失败；
 ```
 
-![640](/home/zyy/typora-notebook/编程语言/go/go培训/picture/640.webp)
+![640](https://github.com/slamidiot/git-Interview/blob/master/640.webp)
 
 
 
