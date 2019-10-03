@@ -6,7 +6,7 @@ func main(){
 	DeferCalldd()
 }
 */
-package main
+/*package main
 
 import "fmt"
 
@@ -26,4 +26,23 @@ a = append(a, 10)
 
 func app(a []int) {
 a[0] = 1
+}*/
+package main
+
+import (
+	"fmt"
+)
+
+func hello() []string {
+	return nil
+}
+
+func main() {
+	h := hello
+	fmt.Printf("%v\n" , h)
+	if h == nil {
+		fmt.Println("nil")
+	} else {
+		fmt.Println("not nil")
+	}
 }

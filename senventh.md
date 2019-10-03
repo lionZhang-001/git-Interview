@@ -1,6 +1,7 @@
 
 1. 通过指针变量p访问其成员变量name，有哪几种方式
-A p.name  B (&p).name  C (*p).name   D p->name
+
+  A p.name  B (&p).name  C (*p).name   D p->name
 ```bash
 答案： A C
 ```
