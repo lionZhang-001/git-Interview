@@ -11,7 +11,7 @@
 
 go语言的25个关键字如下：
 
-![go关键字](/home/zyy/code/go-Interview/go关键字.webp)
+![go关键字](https://github.com/slamidiot/git-Interview/blob/master/go%E5%85%B3%E9%94%AE%E5%AD%97.webp)
 
 
 
