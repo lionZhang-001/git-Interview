@@ -14,18 +14,27 @@ func main() {
 		fmt.Println(k,"->",*v)
 	}
 }
-//for-range循环创建每一个元素的副本，也就是说每次循环的时候都是把当前索引位置的值赋值给一个全局变量，而不是元素的引用。
+//for-range循环创建每一个元素的副本,也就是说每次循环的时候都是把当前索引位置的值赋值给一个全局变量，而不是元素的引用。
 //下面是for-range的循环原理an
 //   for_temp := range
 //   len_temp := len(for_temp)
 //   for index_temp = 0; index_temp < len_temp; index_temp++ {
 //           value_temp = for_temp[index_temp]
-//           index = index_temp
+//          index = index_temp
 //           value = value_temp
 //           original body
 //   }
 //从以上的伪代码中可以看到：首先其计算遍历次数（切片的长度），；每次遍历，都会把当前遍历到的值放到一个全局变量value中
 
-
-
+//map的伪代码：只要map中的key存在，就会一直循环下去
+// Lower a for range over a map.
+// The loop we generate:
+//   var hiter map_iteration_struct
+//   for mapiterinit(type, range, &hiter); hiter.key != nil; mapiternext(&hiter) {
+//           index_temp = *hiter.key
+//           value_temp = *hiter.val
+//           index = index_temp
+//           value = value_temp
+//           original body
+//   }
 
